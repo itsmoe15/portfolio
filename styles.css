@@ -479,6 +479,35 @@ p {
   font-family: "Cairo", sans-serif;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.service-card {
+  border: 1px solid rgba(97, 146, 255, 0.32);
+  border-radius: 10px;
+  padding: 1rem;
+  background: rgba(5, 12, 24, 0.72);
+}
+
+.service-card h3 {
+  margin: 0 0 0.45rem;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.service-card p {
+  margin: 0 0 0.65rem;
+}
+
+.service-card ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--muted);
+}
+
 .stats {
   margin-top: 1.05rem;
   display: grid;
@@ -562,10 +591,28 @@ p {
 
 .project-card {
   position: relative;
+  display: block;
   border: 1px solid rgba(104, 146, 255, 0.33);
   border-radius: 10px;
   padding: 1rem;
   background: rgba(4, 12, 24, 0.78);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(0, 217, 255, 0.7);
+  box-shadow:
+    0 0 0 1px rgba(0, 217, 255, 0.14) inset,
+    0 16px 36px rgba(0, 0, 0, 0.5),
+    0 0 22px rgba(0, 217, 255, 0.12);
+}
+
+.project-card:focus-visible {
+  outline: 2px solid rgba(0, 217, 255, 0.8);
+  outline-offset: 3px;
 }
 
 .project-card h3 {
@@ -573,25 +620,28 @@ p {
   color: #d8e9ff;
 }
 
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.7rem 0 0.35rem;
+}
+
+.project-tech span {
+  border: 1px solid rgba(0, 217, 255, 0.28);
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+  background: rgba(0, 217, 255, 0.08);
+  color: var(--cyan-soft);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
 .project-card ul {
   margin: 0.65rem 0 0;
   padding-left: 1rem;
   color: var(--muted);
-}
-
-.project-card > a {
-  display: inline-block;
-  margin-top: 0.75rem;
-  color: var(--cyan-soft);
-  font-family: "Share Tech Mono", monospace;
-  letter-spacing: 0.05em;
-  font-size: 0.84rem;
-}
-
-.project-card > a:hover,
-.project-card > a:focus-visible {
-  color: var(--cyan);
-  text-shadow: 0 0 10px rgba(0, 217, 255, 0.6);
 }
 
 .featured {
@@ -719,6 +769,10 @@ footer {
   }
 
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
     grid-template-columns: 1fr;
   }
 }

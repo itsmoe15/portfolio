@@ -23,6 +23,7 @@
     <nav>
       <a href="#home">&gt; THE_GATE</a>
       <a href="#about">&gt; PROFILE</a>
+      <a href="#services">&gt; SERVICES</a>
       <a href="#projects">&gt; PROJECTS</a>
       <a href="#contact">&gt; CONTACT</a>
     </nav>
@@ -132,6 +133,48 @@ Built award-winning AI products, including Moeen (2nd place at GDG DevHack'24).<
       </div>
     </section>
 
+    <section class="services reveal hud-panel" id="services">
+      <h2>SERVICES</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>AI &amp; ML Solutions</h3>
+          <p>Designing practical machine learning workflows from preprocessing to training, evaluation, and deployment.</p>
+          <ul>
+            <li>Model development for real-world use cases</li>
+            <li>Deep learning and applied ML experimentation</li>
+            <li>Prediction pipelines and API-ready outputs</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Accessibility-Focused AI</h3>
+          <p>Building inclusive products that use AI to reduce communication and usability barriers.</p>
+          <ul>
+            <li>Assistive AI concepts and prototypes</li>
+            <li>Recognition, translation, and speech workflows</li>
+            <li>Human-centered feature design for underserved users</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>MERN Full-Stack Development</h3>
+          <p>Shipping responsive web applications with modern frontend and backend architecture.</p>
+          <ul>
+            <li>React interfaces and dashboards</li>
+            <li>Node.js and Express backend development</li>
+            <li>MongoDB-backed product features and APIs</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Data Science &amp; Analytics</h3>
+          <p>Turning datasets into experiments, models, and clear insights for decisions and reporting.</p>
+          <ul>
+            <li>Data cleaning, feature engineering, and analysis</li>
+            <li>Classification and clustering workflows</li>
+            <li>Visualization and results reporting</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section class="skills reveal hud-panel" id="skills">
       <h2>SKILLS</h2>
       <div class="chip-grid">
@@ -183,47 +226,77 @@ Built award-winning AI products, including Moeen (2nd place at GDG DevHack'24).<
         <p>Selected projects across AI, ML, and full-stack product engineering.</p>
       </div>
       <div class="project-grid">
-        <article class="project-card featured">
+        <a class="project-card featured" href="https://github.com/itsmoe15/Moeen-App" target="_blank" rel="noopener" aria-label="Open Moeen repository on GitHub">
           <div class="medal-badge silver">Silver Medal - 2nd Place Winner (GDG DevHack'24)</div>
           <h3>Moeen</h3>
           <p>Arabic Sign Language translator with real-time recognition, text generation, and speech output.</p>
+          <div class="project-tech" aria-label="Moeen stack">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>MediaPipe</span>
+            <span>Gemini API</span>
+            <span>ElevenLabs</span>
+          </div>
           <ul>
-            <li>MediaPipe hand landmarks + LSTM sequence modeling</li>
-            <li>Arabic word correction and autocompletion layer</li>
-            <li>Supports letters, numbers, words, and sentence-level translation</li>
+            <li>Real-time gesture recognition using MediaPipe and webcam input</li>
+            <li>Flask backend for translation flow and AI-assisted prediction</li>
+            <li>Speech output powered by ElevenLabs for audible communication</li>
           </ul>
-          <a href="https://github.com/itsmoe15/Moeen-App" target="_blank" rel="noopener">View Repository</a>
-        </article>
-        <article class="project-card">
+        </a>
+        <a class="project-card" href="https://github.com/itsmoe15/Quiz-App" target="_blank" rel="noopener" aria-label="Open Quiz-App repository on GitHub">
           <h3>Quiz-App</h3>
           <p>AI-powered quiz platform for creating, managing, and analyzing educational assessments.</p>
+          <div class="project-tech" aria-label="Quiz-App stack">
+            <span>React</span>
+            <span>Vite</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>Redux Toolkit</span>
+            <span>Gemini API</span>
+          </div>
           <ul>
             <li>Gemini API question generation from PDF, DOCX, and TXT files</li>
             <li>Teacher and student role-based flows with secure authentication</li>
             <li>Quiz scheduling, access controls, attempts, and performance analytics</li>
           </ul>
-          <a href="https://github.com/itsmoe15/Quiz-App" target="_blank" rel="noopener">View Repository</a>
-        </article>
-        <article class="project-card">
+        </a>
+        <a class="project-card" href="https://github.com/itsmoe15/Interactive_Resume_Builder" target="_blank" rel="noopener" aria-label="Open Interactive Resume Builder repository on GitHub">
           <h3>Interactive Resume Builder</h3>
           <p>Web platform for creating modern ATS-friendly resumes with guided editing and optimization.</p>
+          <div class="project-tech" aria-label="Interactive Resume Builder stack">
+            <span>Flask</span>
+            <span>Flask-Login</span>
+            <span>SQLAlchemy</span>
+            <span>JavaScript</span>
+            <span>bcrypt</span>
+            <span>xhtml2pdf</span>
+            <span>pdfkit</span>
+          </div>
           <ul>
             <li>Step-by-step resume builder with live preview workflow</li>
             <li>ATS optimization feedback and keyword improvement support</li>
             <li>Template customization and PDF export for applications</li>
           </ul>
-          <a href="https://github.com/itsmoe15/Interactive_Resume_Builder" target="_blank" rel="noopener">View Repository</a>
-        </article>
-        <article class="project-card">
+        </a>
+        <a class="project-card" href="https://github.com/itsmoe15/Sprints_heart-disease-analysis" target="_blank" rel="noopener" aria-label="Open Sprints Heart Disease Analysis repository on GitHub">
           <h3>Sprints Heart Disease Analysis</h3>
           <p>End-to-end ML analysis pipeline for heart disease prediction and insight generation.</p>
+          <div class="project-tech" aria-label="Heart Disease Analysis stack">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Scikit-learn</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+            <span>Joblib</span>
+          </div>
           <ul>
             <li>Preprocessing, PCA, and feature selection workflow</li>
             <li>Classification with Logistic Regression, Decision Tree, RF, and SVM</li>
             <li>Clustering, hyperparameter tuning, and reproducible training pipelines</li>
           </ul>
-          <a href="https://github.com/itsmoe15/Sprints_heart-disease-analysis" target="_blank" rel="noopener">View Repository</a>
-        </article>
+        </a>
       </div>
     </section>
 
