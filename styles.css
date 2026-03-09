@@ -404,6 +404,10 @@ section {
   text-shadow: 0 0 10px rgba(0, 217, 255, 0.56);
 }
 
+.contact-links {
+  margin-top: 0.9rem;
+}
+
 .hud-panel {
   position: relative;
   padding: 1.35rem;
